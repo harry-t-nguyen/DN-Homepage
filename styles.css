@@ -92,13 +92,17 @@ img, picture, svg, video{
     width: 450px;
     /* flex:1 0 400px; */
 }
-.social{
+#social{
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size:initial; /* to display icon in the middle */
+    
 }
 .fa {
   padding: 20px;
-  font-size: 30px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
