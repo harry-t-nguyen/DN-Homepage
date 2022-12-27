@@ -24,6 +24,7 @@ img, picture, svg, video{
     max-width: 100%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
 /* Header styles */
 .header{
     display: flex;
@@ -53,7 +54,7 @@ img, picture, svg, video{
     display: flex;
     justify-content: space-between;
     padding: 20px 50px;
-    height: 650px;
+    /* height: 650px; */
 }
 
 .content1 div{
@@ -72,6 +73,8 @@ img, picture, svg, video{
 }
 .content1 img{
     /* flex: 1 1 650px; */
+    display: inline-flex;
+    width: 50%;
 }
 
 /* content 2 styles */
@@ -83,6 +86,12 @@ img, picture, svg, video{
     height: 650px;
 }
 
+.content2 img{
+    /* flex: 1 1 650px; */
+    display: inline-flex;
+    width: 50%;
+    flex-shrink: 0;
+}
 .content2 div{
     display: flex;
     gap:20px;
@@ -106,6 +115,7 @@ img, picture, svg, video{
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+  border-radius: 50%;
 }
 
 .fa-facebook {
@@ -116,4 +126,15 @@ img, picture, svg, video{
 .fa-instagram {
   background: #125688;
   color: white;
+}
+
+.footer{
+    /* border: solid; */
+    height: 10rem;
+    display: flex;
+    font: initial;
+    font-size: 32px;
+    font-family: 'Old Standard TT', serif;
+    justify-content: center; /* Align horizontal */
+    align-items: center; /* Align vertical */
 }
